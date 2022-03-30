@@ -7,6 +7,7 @@ export default makeStyles((theme) => ({
         marginBottom: theme.spacing(2)
     },
     button: {
-        marginTop: "20px  !important"
+        marginTop: "20px  !important",
+        marginLeft: "20px !important"
     },
 }))
