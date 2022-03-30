@@ -25,10 +25,10 @@ const Dashboard = () => {
                     <Details title="Expense"/>
                 </Grid>
             </Grid>
-            <PushToTalkButtonContainer>
-                <PushToTalkButton />
-                <ErrorPanel />
-            </PushToTalkButtonContainer>
+            {/*<PushToTalkButtonContainer>*/}
+            {/*    <PushToTalkButton />*/}
+            {/*    <ErrorPanel />*/}
+            {/*</PushToTalkButtonContainer>*/}
         </div>
     );
 };
