@@ -1,5 +1,5 @@
 import {makeStyles} from '@mui/styles'
-import {red, green} from '@mui/material/colors'
+import {red} from '@mui/material/colors'
 
 
 export default makeStyles((theme) => ({
@@ -9,7 +9,7 @@ export default makeStyles((theme) => ({
     },
     avatarExpense: {
         color: theme.palette.getContrastText(red[500]),
-        backgroundColor: red[500],
+        backgroundColor: 'red !important',
     },
     list: {
         maxHeight: '150px',
