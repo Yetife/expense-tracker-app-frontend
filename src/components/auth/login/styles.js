@@ -8,8 +8,8 @@ export default makeStyles(() =>({
        margin: '50px 600px',
    },
 
-    textfield: {
-         padding: '20px'
+    input: {
+         padding: '10px'
         },
     avatar: {
            backgroundColor: 'blue !important'
