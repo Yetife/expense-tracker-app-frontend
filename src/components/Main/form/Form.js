@@ -83,8 +83,8 @@ const Form = () => {
                   <FormControl fullWidth> 
                       <InputLabel>Type</InputLabel>
                       <Select value={formData.type} onChange={(e) => setFormData({...formData, type: e.target.value})}>
-                        <MenuItem value="Income">Income</MenuItem>
-                        <MenuItem value="Expense">Expense</MenuItem>
+                        <MenuItem value="Income" variant={"standard"}>Income</MenuItem>
+                        <MenuItem value="Expense" variant={"standard"}>Expense</MenuItem>
                       </Select>
                   </FormControl>
               </Grid>
@@ -92,15 +92,15 @@ const Form = () => {
                   <FormControl fullWidth>
                       <InputLabel>Category</InputLabel>
                       <Select value={formData.category} onChange={(e) => setFormData({...formData, category: e.target.value})}>
-                          {selectedCategories.map((category) => <MenuItem key={category.type} value={category.type}>{category.type}</MenuItem> )}
+                          {selectedCategories.map((category) => <MenuItem key={category.type} value={category.type} variant={"standard"}>{category.type}</MenuItem> )}
                       </Select>
                   </FormControl>
               </Grid>
               <Grid item xs={6}>
-                <TextField type="number" label="Amount" fullWidth value={formData.amount} onChange={(e) => setFormData({...formData, amount: e.target.value})}/>
+                <TextField type="number" label="Amount" fullWidth value={formData.amount} onChange={(e) => setFormData({...formData, amount: e.target.value})} variant={"standard"}/>
               </Grid>
               <Grid item xs={6}>
-                <TextField type="date" label="Date" fullWidth value={formData.date} onChange={(e) => setFormData({...formData, date: formatDate(e.target.value)})}/>
+                <TextField type="date" label="Date" fullWidth value={formData.date} onChange={(e) => setFormData({...formData, date: formatDate(e.target.value)})} variant={"standard"}/>
               </Grid>
               <Button className={classes.button} variant="outlined" fullWidth onClick={createTransaction}>Create</Button>
       </Grid>
